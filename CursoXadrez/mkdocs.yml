@@ -2,7 +2,7 @@ site_name: Curso Xadrez Zacarias Campelo
 site_description: Xadrez Básico
 site_author: CER Daniel Robert
 
-site_url: https://EmbaixadaZacariasCampelo.github.io/ZacariasCampeloSite/documentacao/
+site_url: https://EmbaixadaZacariasCampelo.github.io/SiteZacariasCampelo/documentacao/
 
 theme:
   name: material
