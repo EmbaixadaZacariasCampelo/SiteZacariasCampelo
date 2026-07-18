@@ -1,0 +1,67 @@
+name: Deploy Site
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          pip install -r JuninPlay/requirements.txt
+
+      - name: Gerar documentação
+        run: |
+          mkdocs build -f JuninPlay/mkdocs.yml
+
+      - name: Montar site final
+        run: |
+          mkdir public
+
+          # Página principal
+          cp index.html public/
+
+          # Arquivos do site
+          if [ -d css ]; then cp -r css public/; fi
+          if [ -d js ]; then cp -r js public/; fi
+          if [ -d imagens ]; then cp -r imagens public/; fi
+
+          # Documentação
+          mv site public/documentacao
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+
+      - name: Enviar artefato
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v4
