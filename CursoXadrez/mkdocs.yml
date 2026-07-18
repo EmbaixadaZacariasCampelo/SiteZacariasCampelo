@@ -1,0 +1,14 @@
+site_name: Curso Xadrez Zacarias Campelo
+
+theme:
+  name: material
+
+nav:
+  - Inicio: index.md
+  - Módulo 1 (Xadrez Básico Primeiro conceitos): 
+        -Aula 01 – Sobre as aulas, Tabuleiro: Aula1.md
+        -Aula 02 – Conceitos básicos, Peças e seus valores: Aula2.md
+        -Aula 03 – Treino de Tática: Aula3.md
+        -Aula 04 – Conceitos de abertura: Aula4.md
+        -Aula 05 – Análise de uma partida: Aula5.md
+
