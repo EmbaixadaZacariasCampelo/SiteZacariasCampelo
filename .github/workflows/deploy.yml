@@ -33,11 +33,11 @@ jobs:
 
       - name: Instalar dependências
         run: |
-          pip install -r JuninPlay/requirements.txt
+          pip install -r CursoXadrez/requirements.txt
 
       - name: Gerar documentação
         run: |
-          mkdocs build -f JuninPlay/mkdocs.yml
+          mkdocs build -f CursoXadrez/mkdocs.yml
 
       - name: Montar site final
         run: |
