@@ -38,6 +38,7 @@ jobs:
       - name: Gerar documentação
         run: |
           mkdocs build -f CursoXadrez/mkdocs.yml
+          ls -la
 
       - name: Montar site final
         run: |
