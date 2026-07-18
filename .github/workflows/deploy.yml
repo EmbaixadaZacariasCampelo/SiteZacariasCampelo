@@ -53,7 +53,7 @@ jobs:
           if [ -d imagens ]; then cp -r imagens public/; fi
 
           # Documentação
-          mv site public/documentacao
+          mv CursoXadrez/site public/documentacao
 
       - name: Configurar Pages
         uses: actions/configure-pages@v5
