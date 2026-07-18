@@ -1,7 +1,14 @@
 site_name: Curso Xadrez Zacarias Campelo
+site_description: Xadrez Básico
+site_author: CER Daniel Robert
+
+site_url: https://EmbaixadaZacariasCampelo.github.io/ZacariasCampeloSite/documentacao/
 
 theme:
   name: material
+
+  language: pt-BR
+
 
 nav:
   - Inicio: index.md
@@ -11,4 +18,5 @@ nav:
         -Aula 03 – Treino de Tática: Aula3.md
         -Aula 04 – Conceitos de abertura: Aula4.md
         -Aula 05 – Análise de uma partida: Aula5.md
+
 
