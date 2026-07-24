@@ -1,36 +1,20 @@
-# Boas Vindas
-Sejam muito bemvindos ao curso de Xadres da Embaixada Zacarias campelo da Segunda Igreja Batista em Fragoso
-é um prazer imensuravel te-lo aqui, durante o curso voce aprender tudo que é impresindivel para melhor sua tecnica de Xadrez ... (continuar escrevendo, estou sem paciencia)
+# Boas vindas
 
-o site ainda está em fase de testes e pode apresentar instabilidades, caso tenho alguma dificuldade, favor encontrar em contato via email: danielrobertf@proton.me-
+Sejam muito bem vindos ao Curso de Xadrez da Embaixada Zacarias Campelo da Segunda Igreja em Fragoso. É um prazer imensurável te-lo aqui, durante o as aulas você vai aprender tudo que é imprescindível no para melhorar sua tecnica no jogo.
 
-No canto esquerdo voce poderá acessar os modulos e as aulas que estão separdas da seguinte maneira.... (inserir cronograma de estudos)
+## Como usar o site
 
-além de ter acesso aos materias extras, recomendo que acesse os materiais extras apenas quando for indicado pelas aulas, as aulas serão postadas diacordo com a minha disponibilidade.
+No canto superior esquerdo, clicando nas três barrinhas você poderá acessar os módulos com as aulas, bem como os materiais extras. Recomendamos que voce acesse os material extra apenas quando for indicado pela tarefa (no momento apenas o módulo 1 está disponível, os demais materiais serão inclusos conforme disponibilidade). O site pode apresentar algumas pequenas variações de layout dependendo do seu dispositivo, mas no geral essas instruções servirão para todos.
 
-desde já agradeço
+## Sobre o site
 
-
+O projeto está em fase de desenvolvimento e teste, portanto ainda podem faltar alguns materiais e o site pode apresentar falhas. Qualquer dificuldade ou sugestão favor em entrar em contato via email: danielrobertf@proton.me
 
 
 
+*Onde está, ó morte, o teu aguilhão? Onde está, ó inferno, a tua vitória?
+Ora, o aguilhão da morte é o pecado, e a força do pecado é a lei.
+Mas graças a Deus que nos dá a vitória por nosso Senhor Jesus Cristo.*
+**1 Coríntios 15:55-57** 
 
-
-
-
-### comandos do site (depois eu dou uma olha - ingnorar por hora)
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-#### Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-#### Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Toda hora e toda a glória seja dada a Cristo
