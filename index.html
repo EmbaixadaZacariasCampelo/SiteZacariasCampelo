@@ -3,16 +3,77 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Meu Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embaixada Zacarias Campelo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #FFD700;
+            color: #1e3c72;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,.3);
+        }
+
+        .botao:hover {
+            background: #FFC107;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,.4);
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>Bem-vindo!</h1>
+    <div class="container">
+        <h1>♟️ Bem-vindo!</h1>
+        <p>Aprenda xadrez de forma simples e organizada.</p>
 
-<a href="documentacao/">
-    Abrir Documentação
-</a>
+        <a href="documentacao/" class="botao">
+            Acessar Curso de Xadrez
+        </a>
+    </div>
 
 </body>
 
