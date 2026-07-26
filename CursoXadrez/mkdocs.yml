@@ -6,8 +6,14 @@ site_url: https://EmbaixadaZacariasCampelo.github.io/SiteZacariasCampelo/documen
 
 theme:
   name: material
+  logo: assets/Escudo_ER.png
+  favicon: assets/Escudo_ER2.png
 
   language: pt-BR
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 
 nav:
