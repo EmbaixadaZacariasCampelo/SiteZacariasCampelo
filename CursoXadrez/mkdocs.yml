@@ -6,8 +6,8 @@ site_url: https://EmbaixadaZacariasCampelo.github.io/SiteZacariasCampelo/documen
 
 theme:
   name: material
-  logo: assets/Escudo_ER.png
-  favicon: assets/Escudo_ER2.png
+  logo: assets/Escudo_ZC.jpeg
+  favicon: assets/Escudo_ZC.jpeg
 
   language: pt-BR
 
@@ -27,6 +27,6 @@ nav:
       - Aula 05 – Análise de uma partida: Aula5.md
 
   - Materiais extras:
-      - Glossário: Glossário.md
+      - Glossário: Glossario.md
 
   - Teste Video: TesteMK.md
