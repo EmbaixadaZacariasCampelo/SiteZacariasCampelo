@@ -6,17 +6,26 @@ Sejam bem vindos ao primeiro módulo do Curso da Xadrez, nesse módulo voce vai 
 
 [Video como jogar xadrez](https://www.youtube.com/watch?v=XqPbouFQJBo)
 
-### Organização do curso
+Organização do curso
 
 Mas antes de iniciarmos, gostaria de me apresentar e falar também sobre a organização das aulas.
 
 o curso está dividido em módulos, cada módulo tem 5 tarefas, cada tarefa tem sua(s) respectiva(s) aula(s). Além disso existem também os materiais extras que serão complementares as tarefas, eles servirão para reforçar o que estudamos nas aulas. 
 
-Organizaremos dessa forma: 
+<iframe
+  width="320"
+  height="180"
+  src="https://youtu.be/watch?v=sYTmQc4EwmQ"
+  title="introducao miniplayer"
+  frameborder="0"
+  allowfullscreen>
+</iframe>**
 
-(miniplayer)
+Organizaremos dessa forma:
 
-**Módulo 1 (Xadrez Básico: Primeiro conceitos)**
+### Cronograma
+
+#### **Módulo 1 (Xadrez Básico: Primeiro conceitos)**
 
 - Aula 01 – Sobre as aulas, sobre o jogo
 
@@ -28,7 +37,7 @@ Organizaremos dessa forma:
 
 - Aula 05 – Análise de uma partida
 
-**Módulo 2 (Reconhecendo Padrões)**
+#### **Módulo 2 (Reconhecendo Padrões)**
 
 - Aula 06 – Mates conhecidos
 
@@ -62,7 +71,7 @@ para mais detalhes assista o video
 
 (inserir miniplayer com explicação)
 
-## notação
+## Notação
 
 No Xadrez existe uma forma padrão de nos referimos as jogadas, essa forma se dá através da letras e números do tabuleiro, como em um jogo de batalha naval. 
 
@@ -107,8 +116,6 @@ Após um lance, pode-se adicionar comentários:
 ?? — grande erro
 !? — lance interessante
 ?! — lance duvidoso
-
-
 
 ## As peças
 
