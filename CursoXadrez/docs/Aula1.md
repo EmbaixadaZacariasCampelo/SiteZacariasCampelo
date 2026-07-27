@@ -12,16 +12,14 @@ Mas antes de iniciarmos, gostaria de me apresentar e falar também sobre a organ
 
 o curso está dividido em módulos, cada módulo tem 5 tarefas, cada tarefa tem sua(s) respectiva(s) aula(s). Além disso existem também os materiais extras que serão complementares as tarefas, eles servirão para reforçar o que estudamos nas aulas. 
 
-<iframe
-  width="320"
-  height="180"
-  src="https://youtu.be/watch?v=sYTmQc4EwmQ"
-  title="introducao miniplayer"
-  frameborder="0"
+<iframe 
+  width="620" height="320" 
+  src="https://www.youtube.com/embed/sYTmQc4EwmQ" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
   allowfullscreen>
-</iframe>**
-
-Organizaremos dessa forma:
+</iframe>
 
 ### Cronograma
 
