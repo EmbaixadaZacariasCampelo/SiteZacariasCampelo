@@ -4,7 +4,7 @@
 
 Sejam bem vindos ao primeiro módulo do Curso da Xadrez, nesse módulo voce vai aprender as bases do Xadrez, sobre as peças, tabuleiro e os conceitos fundamentais para um bom jogo. É importante salientar que não estudaremos o movimento das peças ou regras do jogo, para isso recomendamos que você nos procure presencialmente e busque por materias na internet
 
-[Video como jogar xadrez](https://www.youtube.com/watch?v=XqPbouFQJBo)
+Caso você não saiba jogar recomendo que [Clique Aqui](https://www.youtube.com/watch?v=XqPbouFQJBo), para acesar um video explicativo no youtube
 
 Organização do curso
 
@@ -67,11 +67,27 @@ Caso o tabuleiro não possua coordenadas (letras e números)
 
 para mais detalhes assista o video
 
-(inserir miniplayer com explicação)
+<iframe 
+  width="620" height="320" 
+  src="https://www.youtube.com/embed/nP_k8khBo7o" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
 
 ## Notação
 
 No Xadrez existe uma forma padrão de nos referimos as jogadas, essa forma se dá através da letras e números do tabuleiro, como em um jogo de batalha naval. 
+
+<iframe 
+  width="620" height="320" 
+  src="https://www.youtube.com/embed/3rxyysWxqDA" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
 
 As linhas são numeradas de 1 a 8, e as colunas são representadas por letras de A até H
 
@@ -127,4 +143,11 @@ As pontuação são separadas da seguinte fora:
 - Dama: 9 pontos
 - Rei: (simbolo do infinito), não é possivel calcular um valor para o Rei, já ele sofrer chequemate a partida se acaba, ou seja o rei vale a pertida inteira
 
-(inserir miniplayer)
+<iframe 
+  width="620" height="320" 
+  src="https://www.youtube.com/embed/TTa39b6zl0I" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
