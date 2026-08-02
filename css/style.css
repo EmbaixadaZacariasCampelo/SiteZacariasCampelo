@@ -15,7 +15,7 @@ body {
         rgba(30, 60, 114, 0.85),
         rgba(42, 82, 152, 0.85)
     ),
-    url('../image/fundo.jpg');
+    url('../documentacao/assets/fundo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
