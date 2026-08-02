@@ -1,10 +1,8 @@
 site_name: Curso Xadrez Zacarias Campelo
 site_description: Xadrez Básico
 site_author: CER Daniel Robert
-
 site_url: https://EmbaixadaZacariasCampelo.github.io/SiteZacariasCampelo/documentacao/
 
-# Repositório (botão no topo)
 repo_name: EmbaixadaZacariasCampelo
 repo_url: https://github.com/EmbaixadaZacariasCampelo/SiteZacariasCampelo
 
@@ -13,8 +11,6 @@ theme:
   logo: assets/Escudo_ZC.jpeg
   favicon: assets/Escudo_ZC.jpeg
   language: pt-BR
-
-  # Cores com modo claro E escuro
   palette:
     - scheme: default
       primary: deep blue
@@ -22,57 +18,70 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Mudar para modo escuro
-
     - scheme: slate
       primary: deep blue
       accent: amber
       toggle:
         icon: material/toggle-switch
         name: Mudar para modo claro
-
-  # Funcionalidades do tema
   features:
-    - navigation.tabs          # Abas no topo (como um site)
-    - navigation.sections      # Seções no menu lateral
-    - navigation.expand        # Expandir submenus por padrão
-    - navigation.top           # Botão "voltar ao topo"
-    - search.suggest            # Sugestões ao digitar na busca
-    - search.highlight          # Destaque nos resultados da busca
-    - content.code.copy         # Botão de copiar em blocos de código
-    - content.tabs.link         # Abas sincronizadas entre páginas
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
 
-# ============================================
-# EXTENSÕES DE MARKDOWN
-# ============================================
 markdown_extensions:
-  - admonition                  # Caixas coloridas (!!!)
-  - pymdownx.details            # Caixas colapsáveis (???)
-  - pymdownx.superfences        # Código avançado em blocos
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.tasklist:
-      custom_checkbox: true      # Checklists estilizados
+      custom_checkbox: true
   - pymdownx.tabbed:
-      alternate_style: true     # Abas dentro do conteúdo
+      alternate_style: true
   - toc:
-      permalink: true            # Link permanente nos títulos
-  - def_list                     # Listas de definição
-  - attr_list                    # Atributos em elementos
+      permalink: true
+  - def_list
+  - attr_list
 
-# ============================================
-# PLUGINS
-# ============================================
 plugins:
   - search:
       lang:
         - pt-BR
         - en
 
-# ============================================
-# INFORMAÇÕES EXTRA NO TOPO/DIREITA
-# ============================================
 extra:
   social:
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/seu-perfil
       name: Instagram
     - icon: fontawesome/brands/facebook
-      link
+      link: https://facebook.com/seu-perfil
+      name: Facebook
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/seu-canal
+      name: YouTube
+    - icon: fontawesome/solid/envelope
+      link: mailto:seuemail@dominio.com
+      name: Email
+  generator: false
+
+copyright: "&copy; 2026 Embaixada Zacarias Campelo — Curso de Xadrez"
+
+nav:
+  - Início: index.md
+
+  - Módulo 1 (Xadrez Básico - Primeiros conceitos):
+      - Aula 01 – Sobre o curso, Sobre o Jogo: Aula1.md
+      - Aula 02 – Conceitos Básicos e Abertura: Aula2.md
+      - Aula 03 – Meio Jogo, Treino de Tática: Aula3.md
+      - Aula 04 – Treino de Mates: Aula4.md
+      - Aula 05 – Análise de uma partida: Aula5.md
+
+  - Materiais extras:
+      - Glossário: Glossario.md
+
+  - Teste Vídeo: TesteMK.md
