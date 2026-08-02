@@ -35,7 +35,7 @@ jobs:
         run: |
           pip install -r CursoXadrez/requirements.txt
 
-      - name: Gerar documentação
+      - name: Gerar CursoXadrez
         run: |
           mkdocs build -f CursoXadrez/mkdocs.yml
           ls -la
@@ -50,10 +50,10 @@ jobs:
           # Arquivos do site
           if [ -d css ]; then cp -r css public/; fi
           if [ -d js ]; then cp -r js public/; fi
-          if [ -d imagens ]; then cp -r imagens public/; fi
+          if [ -d image ]; then cp -r image public/; fi
 
           # Documentação
-          mv CursoXadrez/site public/documentacao
+          mv CursoXadrez/site public/CursoXadrez
 
       - name: Configurar Pages
         uses: actions/configure-pages@v5

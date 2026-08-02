@@ -4,29 +4,77 @@ site_author: CER Daniel Robert
 
 site_url: https://EmbaixadaZacariasCampelo.github.io/SiteZacariasCampelo/documentacao/
 
+# Repositório (botão no topo)
+repo_name: EmbaixadaZacariasCampelo
+repo_url: https://github.com/EmbaixadaZacariasCampelo/SiteZacariasCampelo
+
 theme:
   name: material
   logo: assets/Escudo_ZC.jpeg
   favicon: assets/Escudo_ZC.jpeg
-
   language: pt-BR
 
+  # Cores com modo claro E escuro
+  palette:
+    - scheme: default
+      primary: deep blue
+      accent: amber
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Mudar para modo escuro
+
+    - scheme: slate
+      primary: deep blue
+      accent: amber
+      toggle:
+        icon: material/toggle-switch
+        name: Mudar para modo claro
+
+  # Funcionalidades do tema
+  features:
+    - navigation.tabs          # Abas no topo (como um site)
+    - navigation.sections      # Seções no menu lateral
+    - navigation.expand        # Expandir submenus por padrão
+    - navigation.top           # Botão "voltar ao topo"
+    - search.suggest            # Sugestões ao digitar na busca
+    - search.highlight          # Destaque nos resultados da busca
+    - content.code.copy         # Botão de copiar em blocos de código
+    - content.tabs.link         # Abas sincronizadas entre páginas
+
+# ============================================
+# EXTENSÕES DE MARKDOWN
+# ============================================
 markdown_extensions:
+  - admonition                  # Caixas coloridas (!!!)
+  - pymdownx.details            # Caixas colapsáveis (???)
+  - pymdownx.superfences        # Código avançado em blocos
   - pymdownx.tasklist:
-      custom_checkbox: true
+      custom_checkbox: true      # Checklists estilizados
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true     # Abas dentro do conteúdo
+  - toc:
+      permalink: true            # Link permanente nos títulos
+  - def_list                     # Listas de definição
+  - attr_list                    # Atributos em elementos
 
+# ============================================
+# PLUGINS
+# ============================================
+plugins:
+  - search:
+      lang:
+        - pt-BR
+        - en
 
-nav:
-  - Inicio: index.md
-
-  - Módulo 1 (Xadrez Básico Primeiro conceitos):
-      - Aula 01 – Sobre o curso, Sobre o Jogo: Aula1.md
-      - Aula 02 – Conceitos Básicos, e abertura: Aula2.md
-      - Aula 03 – Meio jogo, Treino de Tática: Aula3.md
-      - Aula 04 – Treino de Mates: Aula4.md
-      - Aula 05 – Análise de uma partida: Aula5.md
-
-  - Materiais extras:
-      - Glossário: Glossario.md
-
-  - Teste Video: TesteMK.md
+# ============================================
+# INFORMAÇÕES EXTRA NO TOPO/DIREITA
+# ============================================
+extra:
+  social:
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/seu-perfil
+      name: Instagram
+    - icon: fontawesome/brands/facebook
+      link

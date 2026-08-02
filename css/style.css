@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(
+        135deg,
+        rgba(30, 60, 114, 0.85),
+        rgba(42, 82, 152, 0.85)
+    ),
+    url('../image/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/* ============================================
+   WRAPPER PARA ROLAGEM
+   ============================================ */
+
+.wrapper-conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* ============================================
+   AVISO POPUP
+   ============================================ */
+
+.overlay-aviso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.overlay-aviso.oculto {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.caixa-aviso {
+    background: #1e3c72;
+    border: 2px solid rgba(255, 215, 0, 0.4);
+    border-radius: 15px;
+    padding: 40px 35px;
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    animation: aparecer 0.4s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.icone-aviso {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.caixa-aviso h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+.caixa-aviso p {
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.botao-aviso {
+    display: inline-block;
+    padding: 12px 35px;
+    background: #FFD700;
+    color: #1e3c72;
+    border: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+}
+
+.botao-aviso:hover {
+    background: #FFC107;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .4);
+}
+
+/* Bloqueia interação com o conteúdo enquanto o aviso está visível */
+.conteudo-principal {
+    pointer-events: none;
+    user-select: none;
+}
+
+.conteudo-principal.desbloqueado {
+    pointer-events: auto;
+    user-select: auto;
+}
+
+/* ============================================
+   CONTEÚDO PRINCIPAL
+   ============================================ */
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+    margin-top: 10vh;
+    margin-bottom: 90px;
+    min-width: 300px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.icone-peca {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.botao {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #FFD700;
+    color: #1e3c72;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+}
+
+.botao:hover {
+    background: #FFC107;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .4);
+}
+
+/* ============================================
+   RODAPÉ
+   ============================================ */
+
+.rodape {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+    padding: 50px 30px 30px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rodape-conteudo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.rodape-texto {
+    font-size: 1rem;
+    color: #d0d0d0;
+    margin-bottom: 30px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-item svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* Cores específicas para cada rede social */
+.instagram {
+    background: radial-gradient(circle at 30% 10%, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.facebook {
+    background: #1877F2;
+}
+
+.email {
+    background: linear-gradient(135deg, #EB5424, #CD201F);
+}
+
+.youtube {
+    background: #FF0000;
+}
+
+.social-item:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.rodape-copy {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rodape-copy p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+
+@media (max-width: 600px) {
+    .wrapper-conteudo {
+        padding: 20px 15px;
+    }
+
+    .container {
+        padding: 25px;
+        margin-top: 5vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .botao {
+        padding: 12px 28px;
+        font-size: 1rem;
+    }
+
+    .icone-peca {
+        width: 60px;
+        height: 60px;
+    }
+
+    .caixa-aviso {
+        padding: 30px 25px;
+    }
+
+    .caixa-aviso h2 {
+        font-size: 1.3rem;
+    }
+
+    .caixa-aviso p {
+        font-size: 0.95rem;
+    }
+
+    .rodape {
+        padding: 40px 20px 25px;
+    }
+
+    .rodape-conteudo h3 {
+        font-size: 1.3rem;
+    }
+
+    .redes-sociais {
+        gap: 15px;
+    }
+
+    .social-item {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-item svg {
+        width: 22px;
+        height: 22px;
+    }
+}

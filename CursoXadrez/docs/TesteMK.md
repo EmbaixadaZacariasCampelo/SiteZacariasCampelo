@@ -1,22 +1,40 @@
-# 
+# Esta Página é usada para testes de desenvolvimento
 
-# Título 1
+Por favor retone para uma página em funcionamento
 
-1 # é um espaço
 
-## Título 2
 
-2 ## é um espaço
 
-### Título 3
 
-3 ### é um espaço (e assim vai)
 
-Texto normal --> Só escrever normal
 
-*Texto em itálico* --> Escrever entre
 
- **
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **Texto em negrito**
 
@@ -33,24 +51,7 @@ Texto normal --> Só escrever normal
 
 - [ ] lista de marcar
 
-Como inserir o corretor ortográfico nesse editor de MK?
-
-já inseri
-
-sapato 
-
-<iframe
-  width="320"
-  height="180"
-  src="https://youtu.be/YyyqkezL4YQ?si=erkETrRGj7ISd8qH"
-  title="teste de miniplayer"
-  frameborder="0"
-  allowfullscreen>
-</iframe>**
-
-# Minha anotação
-
-Conteúdo da anotação...
+- [ ] Teste lista de marcar
 
 <iframe
     width="560"
@@ -60,3 +61,41 @@ Conteúdo da anotação...
     frameborder="0"
     allowfullscreen>
 </iframe>
+
+
+
+??? note "Introdução ao Xadrez" Esta seção contém informações básicas sobre o jogo de xadrez. Clique para expandir! 
+- Tabuleiro 8x8 - 32 peças no total 
+- Objetivo: xeque-mate 
+??? tip "Movimento do Peão" O peão é a peça mais numerosa e tem movimentos específicos:
+- Move-se **1 casa para frente** na diagonal ao capturar
+- Na primeira jogada pode mover **2 casas** 
+- Não pode recuar 
+??? question "Regra do Roque" O roque é um movimento especial que envolve: 
+1. Rei e Torre nunca terem sido movidos 
+2. Nenhuma peça entre eles 
+3. Rei não estar em xeque
+
+
+??? note "Introdução ao Xadrez" Esta seção contém informações básicas sobre o jogo de xadrez. Clique para expandir! - Tabuleiro 8x8 - 32 peças no total - Objetivo: xeque-mate ??? tip "Movimento do Peão" O peão é a peça mais numerosa e tem movimentos específicos: - Move-se **1 casa para frente** na diagonal ao capturar - Na primeira jogada pode mover **2 casas** - Não pode recuar ??? question "Regra do Roque" O roque é um movimento especial que envolve: 1. Rei e Torre nunca terem sido movidos 2. Nenhuma peça entre eles 3. Rei não estar em xeque
+
+# Capítulo 1 — Introdução
+
+Aqui vem um texto normal do curso.
+
+??? note "Informação extra sobre o tabuleiro"
+    Esta seção só aparece quando clicar!
+    
+    O tabuleiro tem:
+    - 64 casas (8x8)
+    - Cores alternadas (claras e escuras)
+    - A casa inferior direita é sempre branca
+
+??? question "Qual o valor de cada peça?"
+    | Peça | Valor |
+    |---|---|
+    | Peão | 1 |
+    | Cavalo | 3 |
+    | Bispo | 3 |
+    | Torre | 5 |
+    | Rainha | 9 |
