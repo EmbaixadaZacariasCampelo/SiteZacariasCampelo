@@ -1,58 +1,66 @@
 name: Deploy Site
 
-on: push: branches: - main
+on:
+  push:
+    branches:
+      - main
 
-permissions: contents: read pages: write id-token: write
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-concurrency: group: pages cancel-in-progress: true
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
-jobs: deploy: runs-on: ubuntu-latest
-environment:
-  name: github-pages
-  url: ${{ steps.deployment.outputs.page_url }}
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-steps:
-  - name: Baixar o repositório
-    uses: actions/checkout@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
-  - name: Instalar Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: "3.11"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-  - name: Instalar dependências
-    run: |
-      pip install -r CursoXadrez/requirements.txt
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
 
-  - name: Gerar Documentação
-    run: |
-      mkdocs build -f CursoXadrez/mkdocs.yml
-      ls -la
+      - name: Install dependencies
+        run: |
+          pip install -r CursoXadrez/requirements.txt
 
-  - name: Montar site final
-    run: |
-      mkdir public
+      - name: Build MkDocs
+        run: |
+          cd CursoXadrez
+          mkdocs build
 
-      # Página principal
-      cp index.html public/
+      - name: Prepare public folder
+        run: |
+          mkdir public
 
-      # Arquivos do site
-      if [ -d css ]; then cp -r css public/; fi
-      if [ -d js ]; then cp -r js public/; fi
-      if [ -d imagens ]; then cp -r imagens public/; fi
+          # Copiar página principal
+          cp index.html public/
 
-      # Documentação
-      mv CursoXadrez/site public/Documentação
+          # Copiar pastas do site
+          cp -r css public/ 2>/dev/null || true
+          cp -r js public/ 2>/dev/null || true
+          cp -r image public/ 2>/dev/null || true
 
-  - name: Configurar Pages
-    uses: actions/configure-pages@v5
+          # Copiar documentação MkDocs
+          cp -r CursoXadrez/site/* public/CursoXadrez/
 
-  - name: Enviar artefato
-    uses: actions/upload-pages-artifact@v3
-    with:
-      path: public
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
 
-  - name: Publicar
-    id: deployment
-    uses: actions/deploy-pages@v4
-
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
