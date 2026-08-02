@@ -53,11 +53,11 @@ jobs:
           cp -r js public/ 2>/dev/null || true
           cp -r image public/ 2>/dev/null || true
           
-          # Criar pasta CourseXadrez ANTES de copiar
-          mkdir -p public/CursoXadrez
+          # Criar pasta documentacao ANTES de copiar
+          mkdir -p public/documentacao
           
           # Copiar documentação MkDocs
-          cp -r CursoXadrez/site/* public/CursoXadrez/
+          cp -r CursoXadrez/site/* public/documentacao/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
