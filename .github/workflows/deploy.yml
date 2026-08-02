@@ -44,15 +44,18 @@ jobs:
       - name: Prepare public folder
         run: |
           mkdir public
-
+          
           # Copiar página principal
           cp index.html public/
-
+          
           # Copiar pastas do site
           cp -r css public/ 2>/dev/null || true
           cp -r js public/ 2>/dev/null || true
           cp -r image public/ 2>/dev/null || true
-
+          
+          # Criar pasta CourseXadrez ANTES de copiar
+          mkdir -p public/CursoXadrez
+          
           # Copiar documentação MkDocs
           cp -r CursoXadrez/site/* public/CursoXadrez/
 
