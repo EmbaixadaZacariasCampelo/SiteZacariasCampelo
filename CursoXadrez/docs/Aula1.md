@@ -6,11 +6,13 @@ Sejam bem vindos ao primeiro módulo do Curso da Xadrez, nesse módulo voce vai 
 
 Caso você não saiba jogar recomendo que [Clique Aqui](https://www.youtube.com/watch?v=XqPbouFQJBo), para acesar um video explicativo no youtube
 
-Organização do curso
+### Organização do curso
 
 Mas antes de iniciarmos, gostaria de me apresentar e falar também sobre a organização das aulas.
 
 o curso está dividido em módulos, cada módulo tem 5 tarefas, cada tarefa tem sua(s) respectiva(s) aula(s). Além disso existem também os materiais extras que serão complementares as tarefas, eles servirão para reforçar o que estudamos nas aulas. 
+
+Caso você não conheça alguma palavra que será dita durante o curso, você pode clicar no emcima dela e voce será direcionado ao material extra [Glóssario](Glossario.md). 
 
 <iframe 
   width="620" height="320" 
@@ -21,9 +23,9 @@ o curso está dividido em módulos, cada módulo tem 5 tarefas, cada tarefa tem 
   allowfullscreen>
 </iframe>
 
-### Cronograma
+#### Cronograma
 
-#### **Módulo 1 (Xadrez Básico: Primeiro conceitos)**
+##### **Módulo 1 (Xadrez Básico: Primeiro conceitos)**
 
 - Aula 01 – Sobre as aulas, sobre o jogo
 
@@ -35,7 +37,9 @@ o curso está dividido em módulos, cada módulo tem 5 tarefas, cada tarefa tem 
 
 - Aula 05 – Análise de uma partida
 
-#### **Módulo 2 (Reconhecendo Padrões)**
+##### 
+
+##### **Módulo 2 (Reconhecendo Padrões)**
 
 - Aula 06 – Mates conhecidos
 
@@ -135,13 +139,16 @@ Após um lance, pode-se adicionar comentários:
 
 Para fins didáticos as peças são separadas por valores, porém é importante lembrar, essa valores servem apenas para facilitar o ensino de xadrez e pensamento durante o jogo. Dessa forma a pontuação **NÃO REPRESENTA UM VERDADEDA ABSOLUTA**, ou seja tudo **depende da posição** analizada.
 
-As pontuação são separadas da seguinte fora:
-
-- Peões: 1 ponto
-- Peças menores: Bispos e Cavalos: 3 pontos
-- peças maiores: Torres: 5 pontos
-- Dama: 9 pontos
-- Rei: (simbolo do infinito), não é possivel calcular um valor para o Rei, já ele sofrer chequemate a partida se acaba, ou seja o rei vale a pertida inteira
+- As pontuação são separadas da seguinte fora:
+  
+  | Peça   | Símbolo | Valor Padrão                            |
+  | ------ | ------- | --------------------------------------- |
+  | Peão   | ♙♟      | 1 ponto                                 |
+  | Cavalo | ♘♞      | 3 pontos                                |
+  | Bispo  | ♗♝      | 3 pontos                                |
+  | Torre  | ♖♜      | 5 pontos                                |
+  | Rainha | ♕♛      | 9 pontos                                |
+  | Rei    | ♔♚      | Infinito (partida termina se capturado) |
 
 <iframe 
   width="620" height="320" 

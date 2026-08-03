@@ -15,8 +15,8 @@ body {
         rgba(30, 60, 114, 0.85),
         rgba(42, 82, 152, 0.85)
     ),
-    url('../documentacao/assets/fundo.jpg');
-    background-size: cover;
+    url('..documentacao/assets/fundo.jpg');
+    background-size: auto 120%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -143,16 +143,15 @@ body {
 
 .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.15);
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 50px;
+    backdrop-filter: blur(1px);
+    padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
     margin-top: 10vh;
     margin-bottom: 90px;
-    min-width: 300px;
-    max-width: 600px;
+    min-width: 100px;
+    max-width: 400px;
     width: 100%;
 }
 
@@ -160,7 +159,6 @@ body {
     width: 80px;
     height: 80px;
     margin-bottom: 20px;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
 }
 
 h1 {
@@ -198,12 +196,14 @@ h1 {
    ============================================ */
 
 .rodape {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
-    padding: 50px 30px 30px;
-    width: 100%;
-    max-width: 1200px;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    padding: 10px 30px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+    margin-top: 5vh;
+    width: 100%;
 }
 
 .rodape-conteudo h3 {

@@ -8,8 +8,8 @@ repo_url: https://github.com/EmbaixadaZacariasCampelo/SiteZacariasCampelo
 
 theme:
   name: material
-  logo: assets/Escudo_ZC.jpeg
-  favicon: assets/Escudo_ZC.jpeg
+  logo: assets/favicon.ico
+  favicon: assets/favicon.ico
   language: pt-BR
   palette:
     - scheme: default
@@ -25,9 +25,6 @@ theme:
         icon: material/toggle-switch
         name: Mudar para modo claro
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
     - navigation.top
     - search.suggest
     - search.highlight
@@ -56,16 +53,16 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/instagram
-      link: https://instagram.com/seu-perfil
+      link: https://www.instagram.com/embaixada.sibfragoso/
       name: Instagram
     - icon: fontawesome/brands/facebook
-      link: https://facebook.com/seu-perfil
+      link: https://www.facebook.com/EmbaixadaZCsibemfragoso/?locale=pt_BR
       name: Facebook
     - icon: fontawesome/brands/youtube
-      link: https://youtube.com/seu-canal
+      link: https://www.youtube.com/@EmbaixadaZacariaCampelo
       name: YouTube
     - icon: fontawesome/solid/envelope
-      link: mailto:seuemail@dominio.com
+      link: mailto:er.zacariascampelo@gmail.com
       name: Email
   generator: false
 
