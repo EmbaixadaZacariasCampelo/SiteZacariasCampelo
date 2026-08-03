@@ -16,7 +16,7 @@ body {
         rgba(42, 82, 152, 0.85)
     ),
     url('../documentacao/assets/fundo.jpg');
-    background-size: auto 120%;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
