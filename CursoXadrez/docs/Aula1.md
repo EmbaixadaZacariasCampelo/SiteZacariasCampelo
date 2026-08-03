@@ -1,160 +1,228 @@
-# Introdução
+# ♟️ Introdução
 
-## Sobre o curso
+---
 
-Sejam bem vindos ao primeiro módulo do Curso da Xadrez, nesse módulo voce vai aprender as bases do Xadrez, sobre as peças, tabuleiro e os conceitos fundamentais para um bom jogo. É importante salientar que não estudaremos o movimento das peças ou regras do jogo, para isso recomendamos que você nos procure presencialmente e busque por materias na internet
+## Bem-vindo
 
-Caso você não saiba jogar recomendo que [Clique Aqui](https://www.youtube.com/watch?v=XqPbouFQJBo), para acesar um video explicativo no youtube
+Seja bem-vindo ao **Módulo 1** do Curso de Xadrez!
 
-### Organização do curso
+Neste módulo você aprenderá os fundamentos do jogo:
 
-Mas antes de iniciarmos, gostaria de me apresentar e falar também sobre a organização das aulas.
+- ♟️ O tabuleiro
+- 👑 As peças
+- 📝 A notação enxadrística
+- 💡 Conceitos fundamentais
 
-o curso está dividido em módulos, cada módulo tem 5 tarefas, cada tarefa tem sua(s) respectiva(s) aula(s). Além disso existem também os materiais extras que serão complementares as tarefas, eles servirão para reforçar o que estudamos nas aulas. 
+!!! info "Importante"
+    Neste módulo **não ensinaremos as regras do jogo nem o movimento das peças**.
 
-Caso você não conheça alguma palavra que será dita durante o curso, você pode clicar no emcima dela e voce será direcionado ao material extra [Glóssario](Glossario.md). 
+    Caso ainda não saiba jogar, recomendamos procurar um professor presencialmente ou consultar materiais introdutórios.
 
-<iframe 
-  width="620" height="320" 
-  src="https://www.youtube.com/embed/sYTmQc4EwmQ" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
+ **Vídeo recomendado:**  
+[Como jogar xadrez (YouTube)](https://www.youtube.com/watch?v=XqPbouFQJBo)
+
+---
+
+## Organização do curso
+
+O curso está dividido em módulos.
+
+Cada módulo possui:
+
+- 5 tarefas
+- Uma ou mais aulas por tarefa
+- Materiais extras de apoio
+
+Os materiais extras servem para reforçar os conteúdos estudados durante as aulas. Recomendamos que eles só sejam acessados quando a tarefa solicitar
+
+!!! tip "Glossário"
+    Encontrou uma palavra desconhecida?
+
+    Consulte o **[Glossário](Glossario.md)**.
+
+---
+
+<div align="center">
+
+<iframe
+width="720"
+height="405"
+src="https://www.youtube.com/embed/sYTmQc4EwmQ"
+title="Introdução ao curso"
+frameborder="0"
+allowfullscreen>
 </iframe>
 
-#### Cronograma
+</div>
 
-##### **Módulo 1 (Xadrez Básico: Primeiro conceitos)**
+---
 
-- Aula 01 – Sobre as aulas, sobre o jogo
+### Cronograma
 
-- Aula 02 – Conceitos básicos, conceitos de abertura
+#### Módulo 1 — Xadrez Básico
 
-- Aula 03 – Meio jogo, treino de tática
+| Aula | Conteúdo                      |
+| ---- | ----------------------------- |
+| 01   | Sobre o curso e o jogo        |
+| 02   | Conceitos básicos e abertura  |
+| 03   | Meio-jogo e treino de tática  |
+| 04   | Finais e treino de xeque-mate |
+| 05   | Análise de partida            |
 
-- Aula 04 – Finais, Treino de cheque mates
+#### Módulo 2 — Reconhecendo padrões
 
-- Aula 05 – Análise de uma partida
+| Aula | Conteúdo               |
+| ---- | ---------------------- |
+| 06   | Mates conhecidos       |
+| 07   | Armadilhas famosas     |
+| 08   | Finais conhecidos      |
+| 09   | *(Em desenvolvimento)* |
+| 10   | Análise de partida     |
 
-##### 
+!!! warning "Observação"
+    Este cronograma pode sofrer alterações conforme a necessidade do curso e dos alunos.
 
-##### **Módulo 2 (Reconhecendo Padrões)**
+---
 
-- Aula 06 – Mates conhecidos
+## O Tabuleiro
 
-- Aula 07 – Armadilhas Conhecidas
+O tabuleiro é um dos elementos mais importantes do xadrez. Apesar de parecer simples, é comum que iniciantes cometam erros ao montá-lo ou ao identificar corretamente as casas.
 
-- Aula 08 – Finais Conhecidos
+Neste capítulo você aprenderá como identificar linhas, colunas e posicionar corretamente o tabuleiro.
 
-- Aula 09 - Ainda não sei kkk (inserir aula)
+---
 
-- Aula 10 – Análise de Partida
+### Coordenadas do tabuleiro
 
-OBS.: Esse planejamento está sujeito a alterações diacordo a necessidade do curso e seus alunos
+O tabuleiro possui **64 [casas](Glossario.md)**, organizadas em:
 
-## Tabuleiro
+- **8 linhas**, numeradas de **1 a 8**.
+- **8 colunas**, identificadas pelas letras **A até H**.
 
-Agora vamos falar sobre um elemento extremamente básico do xadrez: O tabuleiro. Apesar de muito simples não é raro ver muitos erros na hora de montar um tabuleiro, para que isso não ocorra é importante se atentar aos seguintes detalhes.
+!!! info "Importante"
+    As coordenadas são fundamentais para compreender a notação enxadrística e acompanhar partidas.
 
-- As linhas são representas por números
-- As colunas são representas por Letras
-- As peças Brancas sempre devem estar na linha 1
-- O Rei sempre deve ficar na coluna E, independe da cor
-    Uma boa dia é lembrar coluna D é Dama: D de dama
+---
 
-Caso o tabuleiro não possua coordenadas (letras e números)
+### Posicionamento correto das peças
 
-- A casa da direta sempre deve ser branca
-- a dama branca deve ficar casa branca
-- a dama preta deve ficar casa preta
+Ao montar um tabuleiro com coordenadas, observe as seguintes regras:
 
-para mais detalhes assista o video
+- As **peças brancas** sempre começam na **linha 1**.
+- As **peças pretas** sempre começam na **linha 8**.
+- O **Rei** sempre ocupa a **coluna E**.
+- A **Dama** sempre ocupa a **coluna D**.
 
-<iframe 
-  width="620" height="320" 
-  src="https://www.youtube.com/embed/nP_k8khBo7o" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
+!!! tip "Dica para memorizar"
+    Lembre-se da frase:
+
+    **D de Dama.**
+    
+    Assim fica fácil lembrar que a Rainha fica na coluna **D** e, consequentemente, o Rei na coluna **E**.
+
+---
+
+#### Tabuleiros sem coordenadas
+
+Alguns tabuleiros não possuem letras e números impressos. Nesse caso, utilize estas regras:
+
+- A **casa do canto inferior direito** (do lado das peças brancas) **deve ser branca**.
+- A **Dama branca** inicia sobre uma **casa branca**.
+- A **Dama preta** inicia sobre uma **casa preta**.
+
+!!! warning "não recomandos o uso de tabuleiro sem coordedas"
+
+    As coordenadas axiliam, sobre tudo os iniciantes, a montar e entender o tabuleiro, essas dicas só devem ser usadas caso não haja um tabuleiro com as coordenadas
+
+---
+
+### Vídeo
+
+Caso ainda tenha dúvidas sobre a montagem correta do tabuleiro, assista à aula abaixo.
+
+<div align="center">
+
+<iframe
+width="720"
+height="405"
+src="https://www.youtube.com/embed/nP_k8khBo7o"
+title="Montagem do Tabuleiro"
+frameborder="0"
+allowfullscreen>
 </iframe>
 
-## Notação
+</div>
 
-No Xadrez existe uma forma padrão de nos referimos as jogadas, essa forma se dá através da letras e números do tabuleiro, como em um jogo de batalha naval. 
+---
 
-<iframe 
-  width="620" height="320" 
-  src="https://www.youtube.com/embed/3rxyysWxqDA" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
+### Resumo
+
+| Elemento               | Regra                       |
+| ---------------------- | --------------------------- |
+| Linhas                 | Numeradas de **1 a 8**      |
+| Colunas                | Letras de **A até H**       |
+| Rei                    | Coluna **E**                |
+| Dama                   | Coluna **D**                |
+| Peças brancas          | Linha **1**                 |
+| Peças pretas           | Linha **8**                 |
+| Canto inferior direito | Casa **branca**             |
+| Dica rápida            | **Dama na casa de sua cor** |
+
+## As Peças
+
+As peças de xadrez possuem características e funções diferentes. Para facilitar o aprendizado, costuma-se atribuir um **valor relativo** a cada uma delas.
+
+Esses valores ajudam na comparação entre peças e são amplamente utilizados durante o estudo de estratégia e tática.
+
+!!! warning "Importante"
+    Os valores apresentados **não representam uma verdade absoluta**.
+
+    O valor real de uma peça depende da posição em que ela se encontra, das características da posição e dos objetivos da partida. Em muitos casos, uma peça de menor valor pode ser mais importante do que uma de maior valor.
+
+---
+
+### Valores das peças
+
+| Peça   | Símbolo | Valor aproximado |
+| ------ |:-------:|:----------------:|
+| Peão   | ♙ ♟     | **1**            |
+| Cavalo | ♘ ♞     | **3**            |
+| Bispo  | ♗ ♝     | **3**            |
+| Torre  | ♖ ♜     | **5**            |
+| Dama   | ♕ ♛     | **9**            |
+| Rei    | ♔ ♚     | Inestimável      |
+
+!!! note "Por que o Rei não possui um valor?"
+    O objetivo do jogo é dar **xeque-mate** ao Rei adversário. Como a partida termina quando isso acontece, não faz sentido atribuir um valor numérico ao Rei. Por esse motivo, costuma-se dizer que seu valor é **inestimável**.
+
+---
+
+### Como interpretar esses valores
+
+A pontuação das peças foi criado para fins exclusivamente didáticos e serve como uma referência para avaliar trocas durante a partida.
+
+Alguns exemplos:
+
+- Trocar uma torre (5) por um cavalo (3) normalmente representa uma desvantagem material.
+- Trocar um bispo por um cavalo costuma ser considerado uma troca equilibrada, já que ambos possuem valor aproximado de 3 pontos.
+- Sacrificar material pode ser a melhor escolha quando resulta em um ataque decisivo ou em vantagem posicional.
+
+!!! tip "Lembre-se"
+    No xadrez, **posição é mais importante do que material**. Antes de avaliar uma troca, considere a atividade das peças, a segurança dos reis, a estrutura de peões e os planos de ambos os jogadores.
+
+---
+
+### Vídeo
+
+<div align="center">
+
+<iframe
+width="720"
+height="405"
+src="https://www.youtube.com/embed/TTa39b6zl0I"
+title="As Peças"
+frameborder="0"
+allowfullscreen>
 </iframe>
 
-As linhas são numeradas de 1 a 8, e as colunas são representadas por letras de A até H
-
-Cada peça é representada por sua inicial em maiúsculo, com exceção do peão que não apresenta nenhuma letra
-
-nós sempre representamos o lance da seguinte forma:
-
-Primeiro a inical da peça movida, depois a casa em que ela ficou
-
-Ex.:     
-
-- Cf3 — Cavalo vai para f3
-
-- Be7 — Bispo vai para e7
-
-- e4 — Peão vai para e4 (peões não usam letra)
-
-No caso de uma captura adicionamos um x minúsculo 
-
-Ex.:    
-
-- Cxe5 — Cavalo captura em e5
-
-- exd5 — Peão da coluna 'e' captura em d5
-
-- cxd5 — Peão da coluna 'c' captura em d5
-
-Quando duas peças do mesmo tipo podem ir para a mesma casa, é necessário especificar qual delas:
-
-Cbd2 — O Cavalo da coluna b vai para d2
-C1f3 — O Cavalo da linha 1 vai para f3
-Rae1 — A Torre da coluna a vai para e1 
-
-Avaliações de Posição (opcionais)
-Após um lance, pode-se adicionar comentários:
-
-! — bom lance
-!! — excelente lance
-? — erro
-?? — grande erro
-!? — lance interessante
-?! — lance duvidoso
-
-## As peças
-
-Para fins didáticos as peças são separadas por valores, porém é importante lembrar, essa valores servem apenas para facilitar o ensino de xadrez e pensamento durante o jogo. Dessa forma a pontuação **NÃO REPRESENTA UM VERDADEDA ABSOLUTA**, ou seja tudo **depende da posição** analizada.
-
-- As pontuação são separadas da seguinte fora:
-  
-  | Peça   | Símbolo | Valor Padrão                            |
-  | ------ | ------- | --------------------------------------- |
-  | Peão   | ♙♟      | 1 ponto                                 |
-  | Cavalo | ♘♞      | 3 pontos                                |
-  | Bispo  | ♗♝      | 3 pontos                                |
-  | Torre  | ♖♜      | 5 pontos                                |
-  | Rainha | ♕♛      | 9 pontos                                |
-  | Rei    | ♔♚      | Infinito (partida termina se capturado) |
-
-<iframe 
-  width="620" height="320" 
-  src="https://www.youtube.com/embed/TTa39b6zl0I" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
+</div>

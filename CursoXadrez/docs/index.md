@@ -1,1 +1,18 @@
-`# 🏆 Boas-vindas Sejam **muito bem-vindos** ao *Curso de Xadrez* da Embaixada Zacarias Campelo da Segunda Igreja em Fragoso. É um prazer imensurável tê-lo aqui! Durante as aulas, você vai aprender tudo o que é **imprescindível** para melhorar sua técnica no jogo. --- ## 📖 Como Usar o Site No canto superior esquerdo, clicando nas **três barrinhas**, você poderá acessar: | Recurso | Descrição | |---------|-----------| | 📚 **Módulos de Aulas** | Conteúdo estruturado das lições | | 📎 **Materiais Extras** | Complementos indicados pelas tarefas | > ⚠️ **Recomendação:** Acesse os materiais extras apenas quando indicado pela tarefa. No momento, **apenas o Módulo 1 está disponível**. Os demais materiais serão inclusos conforme disponibilidade. ### Nota sobre Layout O site pode apresentar pequenas variações de layout dependendo do seu dispositivo, mas estas instruções servirão para todos. --- ## ℹ️ Sobre o Projeto <div class="alert alert-info"> Este projeto está em **fase de desenvolvimento e teste**. Portanto, ainda podem faltar alguns materiais e o site pode apresentar falhas. </div> Qualquer dificuldade ou sugestão, favor entrar em contato via e-mail: <div class="alert alert-success"> 📧 **[danielrobertf@proton.me](mailto:danielrobertf@proton.me)** </div> --- ## 🙏 Versículo do Dia <blockquote class="quote-card"> <p><em>"Onde estás, ó morte, o teu aguilhão? Onde estás, ó inferno, a tua vitória?"</em></p> <p><em>"Ora, o aguilhão da morte é o pecado, e a força do pecado é a lei."</em></p> <p><strong>"Mas graças a Deus que nos dá a vitória por nosso Senhor Jesus Cristo."</strong></p> <footer><small>1 Coríntios 15:55-57</small></footer> </blockquote> --- <sub>*Toda honra e toda glória sejam dadas a Cristo.*</sub>`
+# Boas vindas
+
+Sejam muito bem vindos ao Curso de Xadrez da Embaixada Zacarias Campelo da Segunda Igreja em Fragoso. É um prazer imensurável te-lo aqui, durante o as aulas você vai aprender tudo que é imprescindível no para melhorar sua tecnica no jogo.
+
+## Como usar o site
+
+No canto superior esquerdo, clicando nas três barrinhas você poderá acessar os módulos com as aulas, bem como os materiais extras. Recomendamos que voce acesse os material extra apenas quando for indicado pela tarefa (no momento apenas o módulo 1 está disponível, os demais materiais serão inclusos conforme disponibilidade). O site pode apresentar algumas pequenas variações de layout dependendo do seu dispositivo, mas no geral essas instruções servirão para todos.
+
+## Sobre o site
+
+O projeto está em fase de desenvolvimento e teste, portanto ainda podem faltar alguns materiais e o site pode apresentar falhas. Qualquer dificuldade ou sugestão favor em entrar em contato via email: danielrobertf@proton.me
+
+*Onde está, ó morte, o teu aguilhão? Onde está, ó inferno, a tua vitória?
+Ora, o aguilhão da morte é o pecado, e a força do pecado é a lei.
+Mas graças a Deus que nos dá a vitória por nosso Senhor Jesus Cristo.*
+**1 Coríntios 15:55-57** 
+
+Toda hora e toda a glória seja dada a Cristo
