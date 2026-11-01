@@ -190,16 +190,15 @@ Se algo estiver errado, o site **não é atualizado** (o que estava no ar contin
 
 O **`menu.bat`**, na pasta principal do projeto, é um menu que faz todo o trabalho do Git por você. Basta dar **duplo clique** nele.
 
-**Antes da primeira vez** (o responsável técnico ajuda):
+**Antes da primeira vez:**
 
-1. Instale o **Git**: https://git-scm.com/download/win (pode clicar em "Next" em tudo).
-2. Baixe o projeto para o seu computador. O responsável técnico faz isso uma vez.
-3. Coloque na pasta principal do projeto os arquivos que o responsável técnico enviou para você. Eles **não ficam no GitHub**, por isso são enviados à parte:
-   - o **`menu.bat`** e o **`Testar.bat`**;
-   - a pasta **`python314`**;
-   - o arquivo **`.env`**, com o seu usuário e a sua chave de acesso ao GitHub. **Nunca envie esse arquivo para ninguém.**
+1. Extraia o ZIP do instalador enviado pelo responsável técnico e dê duplo clique em **`Instalar.bat`**. Ele monta tudo em `C:\SiteZacariasCampelo`: o projeto, o Python, o Git, o Notepad++ e o `menu.bat`. Não é preciso instalar mais nada.
+2. Na **Área de Trabalho** aparece o atalho **"Curso de Xadrez"**, que abre a pasta do projeto. É por ele que você chega ao `menu.bat`, ao `Testar.bat` e às aulas.
 
-Na primeira vez que abrir o `menu.bat`, ele pergunta **seu nome**, que aparece no histórico das alterações.
+Na primeira vez que abrir o `menu.bat`, ele pergunta:
+
+- o seu **usuário** e o seu **token** do GitHub (a chave de acesso enviada pelo responsável técnico; ela não aparece na tela ao digitar). Eles ficam no arquivo `.env`. **Nunca envie esse arquivo para ninguém**;
+- o seu **nome**, que aparece no histórico das alterações.
 
 **O menu:**
 
@@ -219,7 +218,7 @@ Aperte só o **número** da opção.
 **O dia a dia, em 4 passos:**
 
 1. **Antes de começar, opção 1 – Baixar atualizações.** Assim você trabalha na versão mais recente, com o que os outros professores enviaram.
-2. **Edite os arquivos** em `CursoXadrez\docs\` com o Bloco de Notas ou outro editor de texto, seguindo o [guia de formatação](#guia-de-formatação-o-básico-markdown).
+2. **Edite os arquivos** em `CursoXadrez\docs\` com o **Notepad++**, que fica em `C:\SiteZacariasCampelo\notepadpp\notepad++.exe`, seguindo o [guia de formatação](#guia-de-formatação-o-básico-markdown). Ele já vem configurado para a tecla **Tab inserir 4 espaços**, o recuo que as caixas do curso precisam. Deixe o Notepad++ e o navegador do passo 3 lado a lado (tecla Windows + seta para a esquerda ou para a direita).
 3. **Opção 5 – Testar o site** para ver o resultado. Abre uma janela e o navegador. A página se atualiza sozinha cada vez que você salva o arquivo.
 4. **Opção 3 – Enviar minhas alterações.** O menu:
    - mostra a lista de arquivos que vão ser enviados;
@@ -508,13 +507,16 @@ SiteZacariasCampelo/
 ├── menu.bat                    Menu do Git: baixar, ver, enviar, histórico, testar (não vai para o Git)
 ├── Testar.bat                  Atalho para testar o curso localmente (não vai para o Git)
 ├── python314/                  Python 3.14 para Windows, usado pelos .bat (não vai para o Git)
+├── gitportable/                Git portátil, usado pelo menu.bat (só nos computadores do instalador)
+├── notepadpp/                  Notepad++ portátil para editar as aulas (só nos computadores do instalador)
 ├── .env                        Usuário e token do GitHub de cada pessoa (não vai para o Git)
 ├── .venv/                      Ambiente virtual criado pelo Testar.bat (não vai para o Git)
 ├── .github/workflows/
 │   └── deploy.yml              Build e publicação automática no GitHub Pages
 └── CursoXadrez/
     ├── mkdocs.yml              Configuração do MkDocs: tema, extensões, menu (nav)
-    ├── requirements.txt        Dependências Python com versões fixas
+    ├── requirements.txt        Pacotes principais com versões fixas (usado no deploy)
+    ├── requirements-lock.txt   Todos os pacotes, versões exatas (pip freeze), para os computadores
     └── docs/
         ├── *.md                Aulas, página inicial do curso e glossário
         ├── assets/             Logo, favicon e imagens das aulas
@@ -545,7 +547,7 @@ Para atualizar o Python no futuro: instale a nova versão com o instalador ofici
 
 1. confere se existe `python314\python.exe` e para com uma mensagem de erro se não existir;
 2. cria o `.venv` com esse Python, ou recria se o `.venv` tiver sido feito por outro Python;
-3. instala as dependências de `CursoXadrez/requirements.txt` no `.venv`, na primeira vez e sempre que esse arquivo mudar;
+3. instala no `.venv` as dependências de `CursoXadrez/requirements-lock.txt` (ou do `requirements.txt`, se o lock não existir), na primeira vez e sempre que esse arquivo mudar;
 4. roda `mkdocs serve --open`, que abre o navegador em http://127.0.0.1:8000/SiteZacariasCampelo/documentacao/ e **atualiza a página sozinho** sempre que um arquivo `.md` é salvo. Para parar, feche a janela.
 
 Observações:
@@ -612,5 +614,8 @@ JavaScript puro, sem bibliotecas externas:
 
 ### Dependências e futuro
 
-- As versões estão fixadas em `requirements.txt` (`mkdocs`, `mkdocs-material`, `pymdown-extensions`) para o build não quebrar sozinho com atualizações.
+- As dependências ficam em dois arquivos em `CursoXadrez/`:
+  - **`requirements.txt`**: só os pacotes principais (`mkdocs`, `mkdocs-material`, `pymdown-extensions`), com versões fixas. É o arquivo que você edita, e é o usado no deploy (Linux, Python 3.11).
+  - **`requirements-lock.txt`**: o resultado do `pip freeze`, com **todos** os pacotes, inclusive as dependências das dependências, nas versões exatas. É usado pelo `Testar.bat` e pelo `Instalar.bat`, para todos os computadores terem o mesmo ambiente. Foi gerado no Windows com Python 3.14.
+- Para atualizar: mude o `requirements.txt`, instale no `.venv` (`.venv\Scripts\python.exe -m pip install -r CursoXadrez\requirements.txt`), teste, e gere o lock de novo com `.venv\Scripts\python.exe -m pip freeze > CursoXadrez\requirements-lock.txt`. Depois copie de volta o comentário do topo do arquivo, que o `pip freeze` não mantém.
 - **O Material for MkDocs deixa de receber correções em 5 de maio de 2027.** O sucessor indicado pelos autores é o [Zensical](https://zensical.org), que lê o mesmo `mkdocs.yml`. A migração deve ser testada num branch separado, com o tema `variant: classic`, antes dessa data.
