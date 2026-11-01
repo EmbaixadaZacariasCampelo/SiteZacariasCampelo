@@ -192,7 +192,7 @@ O **`menu.bat`**, na pasta principal do projeto, é um menu que faz todo o traba
 
 **Antes da primeira vez:**
 
-1. Extraia o ZIP do instalador enviado pelo responsável técnico e dê duplo clique em **`Instalar.bat`**. Ele monta tudo em `C:\SiteZacariasCampelo`: o projeto, o Python, o Git, o Notepad++ e o `menu.bat`. Não é preciso instalar mais nada.
+1. Extraia o ZIP do instalador enviado pelo responsável técnico e dê duplo clique em **`Instalar.bat`**. Ele monta tudo em `C:\SiteZacariasCampelo`: o projeto, o Python, o Git e o `menu.bat`. Não é preciso instalar mais nada.
 2. Na **Área de Trabalho** aparece o atalho **"Curso de Xadrez"**, que abre a pasta do projeto. É por ele que você chega ao `menu.bat`, ao `Testar.bat` e às aulas.
 
 Na primeira vez que abrir o `menu.bat`, ele pergunta:
@@ -218,7 +218,7 @@ Aperte só o **número** da opção.
 **O dia a dia, em 4 passos:**
 
 1. **Antes de começar, opção 1 – Baixar atualizações.** Assim você trabalha na versão mais recente, com o que os outros professores enviaram.
-2. **Edite os arquivos** em `CursoXadrez\docs\` com o **Notepad++**, que fica em `C:\SiteZacariasCampelo\notepadpp\notepad++.exe`, seguindo o [guia de formatação](#guia-de-formatação-o-básico-markdown). Ele já vem configurado para a tecla **Tab inserir 4 espaços**, o recuo que as caixas do curso precisam. Deixe o Notepad++ e o navegador do passo 3 lado a lado (tecla Windows + seta para a esquerda ou para a direita).
+2. **Edite os arquivos** em `CursoXadrez\docs\` com um editor de texto simples (o Bloco de Notas serve), seguindo o [guia de formatação](#guia-de-formatação-o-básico-markdown). Para o recuo das caixas do curso, use **4 espaços**, nunca a tecla Tab. Deixe o editor e o navegador do passo 3 lado a lado (tecla Windows + seta para a esquerda ou para a direita).
 3. **Opção 5 – Testar o site** para ver o resultado. Abre uma janela e o navegador. A página se atualiza sozinha cada vez que você salva o arquivo.
 4. **Opção 3 – Enviar minhas alterações.** O menu:
    - mostra a lista de arquivos que vão ser enviados;
@@ -508,7 +508,6 @@ SiteZacariasCampelo/
 ├── Testar.bat                  Atalho para testar o curso localmente (não vai para o Git)
 ├── python314/                  Python 3.14 para Windows, usado pelos .bat (não vai para o Git)
 ├── gitportable/                Git portátil, usado pelo menu.bat (só nos computadores do instalador)
-├── notepadpp/                  Notepad++ portátil para editar as aulas (só nos computadores do instalador)
 ├── .env                        Usuário e token do GitHub de cada pessoa (não vai para o Git)
 ├── .venv/                      Ambiente virtual criado pelo Testar.bat (não vai para o Git)
 ├── .github/workflows/
