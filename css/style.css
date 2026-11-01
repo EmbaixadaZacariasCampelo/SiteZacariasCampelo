@@ -64,6 +64,11 @@ body {
     pointer-events: none;
 }
 
+/* Enquanto o aviso está aberto, a página por trás não rola */
+body.aviso-aberto {
+    overflow: hidden;
+}
+
 .caixa-aviso {
     background: #1e3c72;
     border: 2px solid rgba(255, 215, 0, 0.4);
