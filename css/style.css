@@ -15,7 +15,7 @@ body {
         rgba(30, 60, 114, 0.85),
         rgba(42, 82, 152, 0.85)
     ),
-    url('../documentacao/assets/fundo.jpg');
+    url('../image/fundo.jpg');
     background-size: auto 120%;
     background-position: center;
     background-repeat: no-repeat;
@@ -126,17 +126,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, .4);
 }
 
-/* Bloqueia interação com o conteúdo enquanto o aviso está visível */
-.conteudo-principal {
-    pointer-events: none;
-    user-select: none;
-}
-
-.conteudo-principal.desbloqueado {
-    pointer-events: auto;
-    user-select: auto;
-}
-
 /* ============================================
    CONTEÚDO PRINCIPAL
    ============================================ */
@@ -230,41 +219,29 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    transition: all 0.3s ease;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.social-item svg {
-    width: 28px;
-    height: 28px;
+.social-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
-/* Cores específicas para cada rede social */
-.instagram {
-    background: radial-gradient(circle at 30% 10%, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-}
-
-.facebook {
-    background: #1877F2;
-}
-
-.email {
-    background: linear-gradient(135deg, #EB5424, #CD201F);
-}
-
-.youtube {
-    background: #FF0000;
-}
-
-.social-item:hover {
-    transform: translateY(-5px) scale(1.1);
+.social-item:hover,
+.social-item:focus-visible {
+    transform: translateY(-5px) scale(1.08);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.social-item:focus-visible {
+    outline: 3px solid #FFD700;
+    outline-offset: 3px;
 }
 
 .rodape-copy {
@@ -334,12 +311,12 @@ h1 {
     }
 
     .social-item {
-        width: 45px;
-        height: 45px;
+        width: 54px;
+        height: 54px;
     }
 
-    .social-item svg {
-        width: 22px;
-        height: 22px;
+    .social-item img {
+        width: 34px;
+        height: 34px;
     }
 }
