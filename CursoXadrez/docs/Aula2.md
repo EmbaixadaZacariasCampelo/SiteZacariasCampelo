@@ -84,7 +84,7 @@ Os tópicos abaixo apresentam alguns hábitos que aceleram a evolução.
 
 ??? tip "Analise suas partidas"
 
-    A melhor forma de melhorar é aprendendo com os próprios erros, pois dessa forma voce cria um estudo proprio e especifico para suas necessidades.
+    A melhor forma de melhorar é aprendendo com os próprios erros, pois dessa forma você cria um estudo próprio e específico para suas necessidades.
     
     Ao analisar seus erros você identifica:
     

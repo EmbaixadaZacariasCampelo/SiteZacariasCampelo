@@ -36,27 +36,22 @@ jobs:
         run: |
           pip install -r CursoXadrez/requirements.txt
 
+      # --strict faz o build falhar com links quebrados ou avisos
       - name: Build MkDocs
         run: |
           cd CursoXadrez
-          mkdocs build
+          mkdocs build --strict
 
       - name: Prepare public folder
         run: |
           mkdir public
-          
+
           # Copiar página principal
           cp index.html public/
-          
-          # Copiar pastas do site
-          cp -r css public/ 2>/dev/null || true
-          cp -r js public/ 2>/dev/null || true
-          cp -r image public/ 2>/dev/null || true
-          
-          # Criar pasta documentacao ANTES de copiar
-          mkdir -p public/documentacao
-          
+          cp -r css js image public/
+
           # Copiar documentação MkDocs
+          mkdir -p public/documentacao
           cp -r CursoXadrez/site/* public/documentacao/
 
       - name: Upload artifact

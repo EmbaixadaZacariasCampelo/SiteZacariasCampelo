@@ -1,0 +1,16 @@
+# Saída do MkDocs (gerada pelo build e pelo deploy)
+CursoXadrez/site/
+public/
+
+# Usuário e token do GitHub de cada professor (usado pelo menu.bat)
+.env
+
+# Ferramentas locais, distribuídas fora do repositório
+python314/
+Testar.bat
+menu.bat
+
+# Ambiente Python (ambiente virtual criado pelo Testar.bat)
+.venv/
+venv/
+__pycache__/

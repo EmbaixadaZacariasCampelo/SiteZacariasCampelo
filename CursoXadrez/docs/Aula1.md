@@ -14,12 +14,14 @@ Neste módulo você aprenderá os fundamentos do jogo:
 - 💡 Conceitos fundamentais
 
 !!! info "Importante"
-    Neste módulo **não ensinaremos as regras do jogo nem o movimento das peças**.
+    Neste Curso **não ensinaremos as regras do jogo nem o movimento das peças**.
 
-    Caso ainda não saiba jogar, recomendamos procurar um professor presencialmente ou consultar materiais introdutórios.
+    Caso ainda não saiba jogar, recomendamos procurar um professor presencialmente ou consultar materiais introdutórios na internet.
 
+    
  **Vídeo recomendado:**  
 [Como jogar xadrez (YouTube)](https://www.youtube.com/watch?v=XqPbouFQJBo)
+
 
 ---
 
@@ -33,7 +35,7 @@ Cada módulo possui:
 - Uma ou mais aulas por tarefa
 - Materiais extras de apoio
 
-Os materiais extras servem para reforçar os conteúdos estudados durante as aulas. Recomendamos que eles só sejam acessados quando a tarefa solicitar
+Os materiais extras servem para reforçar os conteúdos estudados durante as aulas. Recomendamos que eles só sejam acessados quando a tarefa solicitar.
 
 !!! tip "Glossário"
     Encontrou uma palavra desconhecida?
@@ -94,7 +96,7 @@ Neste capítulo você aprenderá como identificar linhas, colunas e posicionar c
 
 ### Coordenadas do tabuleiro
 
-O tabuleiro possui **64 [casas](Glossario.md)**, organizadas em:
+O tabuleiro possui **64 [casas](Glossario.md#casa)**, organizadas em:
 
 - **8 linhas**, numeradas de **1 a 8**.
 - **8 colunas**, identificadas pelas letras **A até H**.
@@ -130,9 +132,9 @@ Alguns tabuleiros não possuem letras e números impressos. Nesse caso, utilize 
 - A **Dama branca** inicia sobre uma **casa branca**.
 - A **Dama preta** inicia sobre uma **casa preta**.
 
-!!! warning "não recomandos o uso de tabuleiro sem coordedas"
+!!! warning "Não recomendamos o uso de tabuleiro sem coordenadas"
 
-    As coordenadas axiliam, sobre tudo os iniciantes, a montar e entender o tabuleiro, essas dicas só devem ser usadas caso não haja um tabuleiro com as coordenadas
+    As coordenadas auxiliam, sobretudo os iniciantes, a montar e entender o tabuleiro. Essas dicas só devem ser usadas caso não haja um tabuleiro com coordenadas.
 
 ---
 
@@ -199,7 +201,7 @@ Esses valores ajudam na comparação entre peças e são amplamente utilizados d
 
 ### Como interpretar esses valores
 
-A pontuação das peças foi criado para fins exclusivamente didáticos e serve como uma referência para avaliar trocas durante a partida.
+A pontuação das peças foi criada para fins exclusivamente didáticos e serve como uma referência para avaliar trocas durante a partida.
 
 Alguns exemplos:
 

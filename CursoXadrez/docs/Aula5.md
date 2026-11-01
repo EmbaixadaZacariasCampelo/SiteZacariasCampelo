@@ -1,3 +1,3 @@
-# Página Indisponivel :-(
+# Página Indisponível :-(
 
-Está aula ainda não foi desenvolvida, favor retornar as páginas que estão em funcionamento
+Esta aula ainda não foi desenvolvida, favor retornar às páginas que estão em funcionamento
